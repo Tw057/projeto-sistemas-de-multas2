@@ -1,32 +1,77 @@
- *{
+ ** {
     margin: 0;
-    padding:0;
- }
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+body {
     text-align: center;
     background-color: aquamarine;
-    margin:20px;
-    
-    
-    
-}
-#div-principal{
-    background:white;
-    width:450px;
-    height: 300px;
-    margin:50px;
-    padding: 20px;
-    position: relative;
-    left: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-input{
-    margin:5px;
+#div-principal {
+    background: white;
+    width: 90%; /* Usa percentagens para ser mais flexível */
+    max-width: 450px; /* Define um tamanho máximo para telas grandes */
+    height: auto; /* Deixa a altura automática para ajustar ao conteúdo */
+    margin: 50px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
 }
-.buton{
-    position:relative ;
-    right: 10px;
-    
-    
+
+input {
+    margin: 10px 0;
+    width: 100%; /* Faz os inputs ocuparem toda a largura disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buton:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    #div-principal {
+        margin: 20px;
+        width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    #div-principal {
+        padding: 15px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    .buton {
+        padding: 8px 16px;
+    }
 }
