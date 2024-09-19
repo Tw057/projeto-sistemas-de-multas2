@@ -1,0 +1,32 @@
+ *{
+    margin: 0;
+    padding:0;
+ }
+
+body{
+    text-align: center;
+    background-color: aquamarine;
+    margin:20px;
+    
+    
+    
+}
+#div-principal{
+    background:white;
+    width:450px;
+    height: 300px;
+    margin:50px;
+    padding: 20px;
+    position: relative;
+    left: 350px;
+}
+
+input{
+    margin:5px;
+}
+.buton{
+    position:relative ;
+    right: 10px;
+    
+    
+}
